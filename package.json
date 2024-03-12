@@ -1,0 +1,43 @@
+{
+  "name": "habits-server",
+  "version": "1.0.0",
+  "description": "Aplicação para monitoramento de hábitos (backend)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/src/server.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fausantosdev/habits-server.git"
+  },
+  "keywords": [
+    "habits",
+    "nlw",
+    "server",
+    "nodejs"
+  ],
+  "author": "Flávio Sansos <fausantosdev@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fausantosdev/habits-server/issues"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.4.2",
+    "@prisma/client": "^5.7.0",
+    "dayjs": "^1.11.10",
+    "fastify": "^4.24.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.6.1",
+    "git-commit-msg-linter": "^5.0.4",
+    "prisma": "^5.7.0",
+    "prisma-erd-generator": "^1.11.2",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
